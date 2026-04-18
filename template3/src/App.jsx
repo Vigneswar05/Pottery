@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [cartCount, setCartCount] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,12 +38,18 @@ function App() {
     <>
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <a href="#" onClick={(e) => smoothScroll(e, '#')} className="logo">CLAY STUDIO HOUSE</a>
-        <nav className="nav-desktop">
-          <a href="#about" onClick={(e) => smoothScroll(e, '#about')} className="nav-link">Our Studio</a>
-          <a href="#collection" onClick={(e) => smoothScroll(e, '#collection')} className="nav-link">The Collection</a>
-          <a href="#workshops" onClick={(e) => smoothScroll(e, '#workshops')} className="nav-link">Masterclasses</a>
+        <nav className={`nav-sidebar ${isMenuOpen ? 'open' : ''}`}>
+          <button className="close-btn" onClick={() => setIsMenuOpen(false)}>×</button>
+          <div className="nav-sidebar-links">
+            <a href="#about" onClick={(e) => { setIsMenuOpen(false); smoothScroll(e, '#about'); }} className="nav-link">Our Studio</a>
+            <a href="#collection" onClick={(e) => { setIsMenuOpen(false); smoothScroll(e, '#collection'); }} className="nav-link">The Collection</a>
+            <a href="#workshops" onClick={(e) => { setIsMenuOpen(false); smoothScroll(e, '#workshops'); }} className="nav-link">Masterclasses</a>
+          </div>
         </nav>
         <div className="nav-actions">
+          <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(true)}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
           <div className="cart-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}

@@ -1,7 +1,10 @@
-import { ShoppingBag, Search, Camera, Share2, MessageCircle, ArrowRight } from 'lucide-react';
+import { ShoppingBag, Search, Camera, Share2, MessageCircle, ArrowRight, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import { useState } from 'react';
+
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const categories = [
     {
       title: "Hand Building",
@@ -29,15 +32,21 @@ const App = () => {
       <nav>
         <div className="container nav-content">
           <div className="logo"></div>
-          <div className="nav-links">
-            <a href="#">Workshops</a>
-            <a href="#">Collection</a>
-            <a href="#">Our Story</a>
-            <a href="#">Contact</a>
+          <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+            <button className="mobile-close" onClick={() => setIsMenuOpen(false)}>
+              <X size={24} />
+            </button>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>Workshops</a>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>Collection</a>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>Our Story</a>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>Contact</a>
           </div>
           <div className="nav-actions">
-            <Search size={20} />
+            <Search size={20} className="desktop-only" />
             <ShoppingBag size={20} />
+            <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(true)}>
+              <Menu size={24} />
+            </button>
           </div>
         </div>
       </nav>

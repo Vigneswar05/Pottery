@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './App.css';
 
@@ -9,16 +9,23 @@ import gallery2 from './assets/gallery2.png';
 import aboutImg from './assets/about.png';
 
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="app-container">
       {/* Header */}
       <header className="header">
         <div className="logo">Clay Studio House</div>
-        <nav>
+        <button className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-links">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio" onClick={() => setIsMenuOpen(false)}>Portfolio</a></li>
+            <li><a href="#about" onClick={() => setIsMenuOpen(false)}>About</a></li>
+            <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
           </ul>
         </nav>
       </header>
