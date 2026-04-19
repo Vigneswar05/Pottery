@@ -247,7 +247,7 @@
     font-size: 1.5rem;
   }
 
-  .hero { flex-direction: column-reverse; }
+  .hero { flex-direction: column; }
   .hero-content {
     position: relative;
     top: 0;
