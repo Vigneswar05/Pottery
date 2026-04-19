@@ -384,6 +384,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* Responsive constraints */
 @media (max-width: 1024px) {
   .hero { flex-direction: column; }
+  .hero-text { padding: 120px 8% 40px; }
   .hero-img { min-height: 50vh; }
   .philosophy-grid { grid-template-columns: 1fr; }
   .prod-grid { grid-template-columns: repeat(2, 1fr); }

@@ -629,6 +629,10 @@ ul {
         flex-direction: column;
     }
     
+    .hero-content {
+        padding-top: 100px;
+    }
+    
     .newsletter-form {
         flex-direction: column;
     }
