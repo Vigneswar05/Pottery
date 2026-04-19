@@ -252,7 +252,7 @@
     position: relative;
     top: 0;
     height: auto;
-    padding: 60px 30px;
+    padding: 120px 30px 60px 30px;
   }
   .hero-title { font-size: 3.5rem; }
   .hero-image-item { 
