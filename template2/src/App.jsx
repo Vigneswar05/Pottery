@@ -52,7 +52,7 @@ function App() {
   return (
     <>
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-        <a href="#" onClick={(e) => smoothScroll(e, '#')} className="logo">CLAY STUDIO HOUSE</a>
+        <a href="#" onClick={(e) => smoothScroll(e, '#')} className="logo">SAMPLE STUDIO</a>
         <div className="nav-actions">
           <div className="cart-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
@@ -93,7 +93,7 @@ function App() {
               <div className="phil-text">
                 <span className="overline">Our Process</span>
                 <h2 className="s-title">A Symphony of Earth and Fire</h2>
-                <p className="copy">CLAY STUDIO HOUSE was established on the principle of extreme minimalism paired with uncompromising quality. We source the finest earthen deposits and refine them into singular artifacts of daily use.</p>
+                <p className="copy">SAMPLE STUDIO was established on the principle of extreme minimalism paired with uncompromising quality. We source the finest earthen deposits and refine them into singular artifacts of daily use.</p>
                 <br/>
                 <p className="copy">Our works are not produced; they are discovered through the rhythm of the wheel and the alchemy of the kiln.</p>
               </div>
@@ -157,7 +157,7 @@ function App() {
         <div className="container">
           <div className="footer-top">
             <div>
-              <h2>CLAY STUDIO HOUSE</h2>
+              <h2>SAMPLE STUDIO</h2>
               <p>124 Artisan Ave, Studio 4A<br/>New York, NY 10001</p>
             </div>
             <div className="footer-links">
@@ -180,7 +180,7 @@ function App() {
             </div>
           </div>
           <div className="copy-right">
-            <p>&copy; 2026 CLAY STUDIO HOUSE Studio.</p>
+            <p>&copy; 2026 SAMPLE STUDIO Studio.</p>
             <p>Designed for Excellence.</p>
           </div>
         </div>

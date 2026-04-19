@@ -58,7 +58,7 @@ function App() {
     <>
       <header className={`header ${isScrolled ? 'scrolled' : ''}`} id="header">
         <div className="container header-container">
-          <a href="#" onClick={(e) => smoothScroll(e, '#')} className="logo">CLAY STUDIO HOUSE</a>
+          <a href="#" onClick={(e) => smoothScroll(e, '#')} className="logo">SAMPLE STUDIO</a>
           <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
             <ul className="nav-list">
               <li><a href="#about" onClick={(e) => smoothScroll(e, '#about')} className="nav-link">Our Story</a></li>
@@ -98,7 +98,7 @@ function App() {
           <div className="container about-container">
             <div className="about-text">
               <h2 className="section-title">A Legacy of Clay</h2>
-              <p>At CLAY STUDIO HOUSE, we believe in the quiet dignity of handmade objects. Founded by master ceramicists, our studio is dedicated to preserving traditional pottery techniques while embracing modern, minimalist aesthetics.</p>
+              <p>At SAMPLE STUDIO, we believe in the quiet dignity of handmade objects. Founded by master ceramicists, our studio is dedicated to preserving traditional pottery techniques while embracing modern, minimalist aesthetics.</p>
               <p>Every piece that leaves our kiln is a testament to quality, crafted meticulously with premium earthen clay and non-toxic, bespoke glazes. We don't just sell pottery; we share a philosophy of mindful living and artistic integrity.</p>
             </div>
             <div className="about-image-wrapper">
@@ -187,7 +187,7 @@ function App() {
       <footer className="footer bg-darker text-white">
         <div className="container footer-container">
           <div className="footer-brand">
-            <h3>CLAY STUDIO HOUSE</h3>
+            <h3>SAMPLE STUDIO</h3>
             <p>Crafting timeless ceramics for the modern dwelling.</p>
           </div>
           <div className="footer-links">
@@ -213,7 +213,7 @@ function App() {
           </div>
         </div>
         <div className="container footer-bottom">
-          <p>&copy; 2026 CLAY STUDIO HOUSE Pottery. All rights reserved.</p>
+          <p>&copy; 2026 SAMPLE STUDIO Pottery. All rights reserved.</p>
         </div>
       </footer>
     </>

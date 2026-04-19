@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-        <a href="#" onClick={(e) => smoothScroll(e, '#')} className="logo">CLAY STUDIO HOUSE</a>
+        <a href="#" onClick={(e) => smoothScroll(e, '#')} className="logo">SAMPLE STUDIO</a>
         <nav className={`nav-sidebar ${isMenuOpen ? 'open' : ''}`}>
           <button className="close-btn" onClick={() => setIsMenuOpen(false)}>×</button>
           <div className="nav-sidebar-links">
@@ -125,13 +125,13 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <div className="footer-logo">CLAY STUDIO HOUSE</div>
+          <div className="footer-logo">SAMPLE STUDIO</div>
           <div className="social">
             <a href="#">Instagram</a>
             <a href="#">Pinterest</a>
             <a href="#">Journal</a>
           </div>
-          <p style={{color: 'var(--clr-text-muted)', fontSize: '0.8rem'}}>&copy; 2026 CLAY STUDIO HOUSE Studio. All rights reserved.</p>
+          <p style={{color: 'var(--clr-text-muted)', fontSize: '0.8rem'}}>&copy; 2026 SAMPLE STUDIO Studio. All rights reserved.</p>
         </div>
       </footer>
     </>

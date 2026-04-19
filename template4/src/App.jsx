@@ -157,7 +157,7 @@ const App = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
-              <div className="logo" style={{ marginBottom: '1rem' }}>CLAY STUDIO HOUSE</div>
+              <div className="logo" style={{ marginBottom: '1rem' }}>SAMPLE STUDIO</div>
               <p style={{ maxWidth: '300px', color: '#555' }}>
                 Cultivating creativity through the timeless art of ceramics. 
                 Join our community of makers.
@@ -182,7 +182,7 @@ const App = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2024 CLAY STUDIO HOUSE. All rights reserved.</p>
+            <p>&copy; 2024 SAMPLE STUDIO. All rights reserved.</p>
           </div>
         </div>
       </footer>

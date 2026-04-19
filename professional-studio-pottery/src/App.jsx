@@ -15,7 +15,7 @@ const App = () => {
     <div className="app-container">
       {/* Header */}
       <header className="header">
-        <div className="logo">Clay Studio House</div>
+        <div className="logo">Sample Studio</div>
         <button className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <span></span>
           <span></span>
@@ -44,7 +44,7 @@ const App = () => {
             </h1>
             <p className="hero-subtitle">
               Exploring the intersection of primitive form and modern minimalism. 
-              Handcrafted in Clay studio house with soul and precision.
+              Handcrafted in Sample Studio with soul and precision.
             </p>
             <div className="hero-scroll-indicator">
               <span>SCROLL DOWN</span>
@@ -98,7 +98,7 @@ const App = () => {
           <div className="about-image">
             <motion.img 
               src={aboutImg} 
-              alt="Clay Studio House Artist"
+              alt="Sample Studio Artist"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -108,7 +108,7 @@ const App = () => {
           <div className="about-content">
             <h2 className="about-title">OUR VISION</h2>
             <p className="about-text">
-              Clay Studio House was founded on the belief that objects in our home should tell a story. 
+              Sample Studio was founded on the belief that objects in our home should tell a story. 
               Our pieces are born from the earth, shaped by the rhythm of the wheel, and fired 
               with the unpredictable beauty of the kiln.
             </p>
@@ -125,7 +125,7 @@ const App = () => {
 
         {/* Contact/Footer Section */}
         <footer id="contact" className="footer">
-          <h2 className="footer-logo">CLAY STUDIO HOUSE</h2>
+          <h2 className="footer-logo">SAMPLE STUDIO</h2>
           <div className="footer-links">
             <a href="#">Instagram</a>
             <a href="#">Twitter</a>
@@ -133,7 +133,7 @@ const App = () => {
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; 2026 CLAY STUDIO HOUSE. ALL RIGHTS RESERVED.</p>
+            <p>&copy; 2026 SAMPLE STUDIO. ALL RIGHTS RESERVED.</p>
             <p style={{ marginTop: '10px' }}>ESTABLISHED IN 2024 / BASED IN THE CITY</p>
           </div>
         </footer>
