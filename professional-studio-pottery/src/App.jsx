@@ -50,15 +50,16 @@ const App = () => {
               <span>SCROLL DOWN</span>
             </div>
           </motion.div>
-          <div className="hero-image-container">
-            <motion.img 
-              src={heroImg} 
-              alt="Hero Pottery" 
-              className="hero-image"
-              initial={{ scale: 1.1, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-            />
+          <div className="hero-images-stack">
+            <div className="hero-image-item">
+              <img src={heroImg} alt="Hero Pottery 1" />
+            </div>
+            <div className="hero-image-item">
+              <img src={gallery1} alt="Hero Pottery 2" />
+            </div>
+            <div className="hero-image-item">
+              <img src={gallery2} alt="Hero Pottery 3" />
+            </div>
           </div>
         </section>
 
